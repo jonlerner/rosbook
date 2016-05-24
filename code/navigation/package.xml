@@ -1,0 +1,8 @@
+<package>
+  <name>navigation</name>
+  <version>0.0.0</version>
+  <description>Navigation.</description>
+  <maintainer email="wdsmart@gmail.com">Bill Smart</maintainer>
+  <author>Bill Smart</author>
+  <license>BSD</license>
+</package>
