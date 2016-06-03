@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     rate = rospy.Rate(10.0)  # <5>
     while not rospy.is_shutdown():  # <6>
-        angle = sensor.value() * 2 * pi / 100.0
+        angle = sensor.sensor.value() * 2 * pi / 100.0
         
         q = make_quaternion(angle)
 

@@ -1,4 +1,3 @@
-# BEGIN ALL
 #!/usr/bin/env python
 
 import rospy
@@ -39,4 +38,3 @@ if __name__ == '__main__':
         
     sm.execute()
 # END PART_3
-# END ALL

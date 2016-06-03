@@ -1,4 +1,3 @@
-# BEGIN ALL
 #!/usr/bin/env python
 
 import rospy
@@ -64,4 +63,3 @@ if __name__ == '__main__':
         StateMachine.add('SQUARE', square, transitions={'success':'success'})
 
     shapes.execute()
-# END ALL

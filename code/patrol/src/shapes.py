@@ -1,4 +1,3 @@
-# BEGIN ALL
 #!/usr/bin/env python
 
 import rospy
@@ -57,4 +56,3 @@ if __name__ == '__main__':
 
     shapes.execute()
 # END PART_3
-# END ALL

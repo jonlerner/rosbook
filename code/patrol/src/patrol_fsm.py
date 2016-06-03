@@ -36,6 +36,8 @@ class Waypoint(State):
 
 
 if __name__ == '__main__':
+    rospy.init_node('patrol')
+    
     patrol = StateMachine('success')
     with patrol:
         for i,w in enumerate(waypoints):

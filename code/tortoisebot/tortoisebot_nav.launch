@@ -3,7 +3,7 @@
   <param name="robot_description" textfile="$(find tortoisebot)/tortoisebot_nav.urdf" />
   <!-- Start Gazebo with a world containing a large building-->
   <include file="$(find gazebo_ros)/launch/willowgarage_world.launch"/>
-  <!-- include file="$(find gazebo_ros)/launch/empty_world.launch"/ -->
+  <!-- <include file="$(find gazebo_ros)/launch/empty_world.launch"/> -->
   <!-- Spawn a TortoiseBot in Gazebo, taking the description from the
        parameter server -->
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"

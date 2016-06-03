@@ -12,7 +12,9 @@ waypoints = [
 
 
 if __name__ == '__main__':
-    patrol = StateMachine('success')
+    rospy.init_node('patrol')
+
+    patrol = StateMachine(['succeeded','aborted','preempted'])
     with patrol:
         for i,w in enumerate(waypoints):
             goal_pose = MoveBaseGoal()
@@ -29,7 +31,7 @@ if __name__ == '__main__':
                              SimpleActionState('move_base',
                                                MoveBaseAction,
                                                goal=goal_pose),
-                             transitions={'success':waypoints[(i + 1) % \
+                             transitions={'succeeded':waypoints[(i + 1) % \
                                len(waypoints)][0]})
 
     patrol.execute()
